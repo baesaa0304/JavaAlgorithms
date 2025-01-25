@@ -2,7 +2,7 @@ package string.algorithms01;
 
 import java.io.*;
 
-public class Algorithms01 {
+public class Main {
 	
 	public int solution(String s , char c) {  
 		int answer = 0;
@@ -17,7 +17,7 @@ public class Algorithms01 {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		Algorithms01 obj = new Algorithms01();
+		Main obj = new Main();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	
 		String word  = br.readLine();
