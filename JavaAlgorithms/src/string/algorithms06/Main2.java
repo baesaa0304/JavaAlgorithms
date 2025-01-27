@@ -8,7 +8,7 @@ public class Main2 {
     String solution(String s) {
     	String answer = "";
     	for(int i = 0; i < s.length(); i++) {
-    		System.out.println(s.charAt(i)+" "+i+" "+s.indexOf(s.charAt(i)));
+    		//System.out.println(s.charAt(i)+" "+i+" "+s.indexOf(s.charAt(i)));
     		if(s.indexOf(s.charAt(i)) == i) {
     			answer+=s.charAt(i);
     		}
