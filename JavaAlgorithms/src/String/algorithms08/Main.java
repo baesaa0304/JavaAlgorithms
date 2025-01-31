@@ -1,21 +1,24 @@
-package string.algorithms06;
+package String.algorithms08;
 
 import java.io.*;
 import java.util.*;
 
 public class Main {
-    // 문자열 뒤집는 메서드
     String solution(String s) {
-    	String answer = "";
-    	LinkedHashSet<Character> word = new LinkedHashSet<>();
-    	for(Character x : s.toCharArray()) {
-    		word.add(x);
-    	}
+    	String answer = "YES";
     	StringBuilder sb = new StringBuilder();
-        for (Character c : word) {
-            sb.append(c);
-        }
-    	answer = sb.toString();
+		for(Character c : s.toCharArray()) {
+			if(c >= 'A' && c <= 'Z' || c >= 'a' && c <= 'z') {
+				sb.append(Character.toLowerCase(c));
+			}
+		}
+		String word = sb.toString();
+		String word2 = sb.reverse().toString();
+		
+		if(!word.equals(word2)) {
+			 answer = "NO";
+			 return answer;
+		}
         return answer;
     }
 
@@ -24,6 +27,7 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	
 		String word = br.readLine(); 
+		// 입력 : found7, time: study; Yduts; emit, 7Dnuof
 		System.out.println(obj.solution(word)); 
 
 		br.close();

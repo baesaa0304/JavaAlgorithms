@@ -1,29 +1,30 @@
-package string.algorithms02;
+package String.algorithms02;
+
 
 import java.io.*;
 
-public class Main {
+public class Main2 {
+	
 	public String solution(String s) {
 		String answer = "";
 		for(Character c : s.toCharArray()) {
-			if(c >= 97 && c<= 122) {
-				answer +=(char)(c - 32);			
+			if(Character.isLowerCase(c)) {
+				answer += Character.toUpperCase(c);
 			}
 			else {
-				answer +=(char)(c + 32);		
+				answer += Character.toLowerCase(c);
 			}
 		}
-		
 		return answer;
 	}
+	
 	public static void main(String[] args) throws IOException {
-		Main obj = new Main();
+		Main2 obj = new Main2();
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
 		String word = br.readLine();
 		System.out.println(obj.solution(word));
 		br.close();
-		
+
 	}
 
 }

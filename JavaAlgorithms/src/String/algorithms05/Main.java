@@ -1,4 +1,4 @@
-package string.algorithms05;
+package String.algorithms05;
 
 import java.io.*;
 import java.util.ArrayList;

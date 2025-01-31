@@ -1,4 +1,4 @@
-package string.algorithms04;
+package String.algorithms04;
 
 import java.io.*;
 
