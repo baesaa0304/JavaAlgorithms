@@ -30,7 +30,7 @@ public class Main {
                     }
                 }
 
-                // 봉우리라면 카운트 증가
+                	// 봉우리라면 카운트 증가
                 if (isPeak) {
                     answer++;
                 }
