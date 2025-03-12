@@ -43,7 +43,7 @@ public class Main {
 				int a = stack.pop();
 				int b = stack.pop();
 				int d = Math.abs(a / b);
-				// System.out.println(a / b);
+				 //System.out.println(a / b);
 				 stack.push(d);
 			}
 			else {
